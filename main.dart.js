@@ -7994,7 +7994,7 @@ p.sUJ("")
 p.vA$=A.I(r,q)
 p.sVi(a)
 return p},
-QN(a){return new A.ajM(a)},
+QN(a,b){return new A.ajM(b,a)},
 ami(a,b,c,d,e,f,g,h,i,j,k,l,m,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1){var s=k==null?"GET":k,r=i==null?B.hY:i,q=f==null?A.I(t.N,t.z):f,p=j==null?5:j,o=b1==null?A.aTB():b1,n=a8==null?B.eu:a8
 r=new A.h1(e,a0,b,l,m,$,$,null,s,a2===!0,a9,a5,n,o,a4!==!1,q,g!==!1,p,a1!==!1,a6,a7,r)
 r.MY(d,f,g,h,i,j,k,a1,a2,a4,a5,a6,a7,a8,a9,b1)
@@ -8029,8 +8029,9 @@ _.as=n
 _.at=o
 _.ax=p
 _.ay=q},
-ajM:function ajM(a){this.a=null
-this.b=a},
+ajM:function ajM(a,b){this.a=null
+this.b=a
+this.f=b},
 h1:function h1(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2){var _=this
 _.ch=null
 _.CW=a
@@ -43865,35 +43866,37 @@ k===$&&A.b()
 j=A.a3Y(k,m)
 k=b1.b
 if(k!=null)j.O(0,k)
+k=b1.f
+if(k!=null)j.n(0,"content-type",k)
 i=j.i(0,"content-type")
-k=a4.y
-k===$&&A.b()
-h=A.aOR(k,n,m)
+h=a4.y
+h===$&&A.b()
+g=A.aOR(h,n,m)
 n=b1.a
 if(n==null){n=a4.a
 n===$&&A.b()}m=a4.B3$
 m===$&&A.b()
-k=a4.c
-k===$&&A.b()
-g=a4.vB$
-f=a4.r
-f===$&&A.b()
-e=a4.w
+h=a4.c
+h===$&&A.b()
+f=a4.vB$
+e=a4.r
 e===$&&A.b()
-d=a4.x
+d=a4.w
 d===$&&A.b()
-c=a4.z
+c=a4.x
 c===$&&A.b()
-b=a4.Q
+b=a4.z
 b===$&&A.b()
-a=a4.as
+a=a4.Q
 a===$&&A.b()
-a0=a4.at
-a1=a4.ay
-a1===$&&A.b()
-a2=i==null?null:i
-if(a2==null)a2=A.bb(a4.b.i(0,"content-type"))
-a3=A.ami(m,a7,g,a2,a8,h,c,j,a1,b,n.toUpperCase(),a9,b0,a6,a,k,l,d,a4.e,a0,a4.ax,f,a4.d,o,e)
+a0=a4.as
+a0===$&&A.b()
+a1=a4.at
+a2=a4.ay
+a2===$&&A.b()
+k=i==null?k:i
+if(k==null)k=A.bb(a4.b.i(0,"content-type"))
+a3=A.ami(m,a7,f,k,a8,g,b,j,a2,a,n.toUpperCase(),a9,b0,a6,a0,h,l,c,a4.e,a1,a4.ax,e,a4.d,o,d)
 if(p.anh$)throw A.e(A.aNq("Dio can't establish a new connection after it was closed.",a3))
 q=p.AR(0,a3,b3)
 s=1
@@ -92295,7 +92298,7 @@ while(true)switch(s){case 0:o=p.a
 o===$&&A.b()
 n=b
 s=3
-return A.A(o.L4(0,b,null,A.QN(null),c,t.z),$async$t4)
+return A.A(o.L4(0,b,null,A.QN(null,null),c,t.z),$async$t4)
 case 3:q=p.rR(0,n,e)
 s=1
 break
@@ -92308,7 +92311,7 @@ while(true)switch(s){case 0:o=p.a
 o===$&&A.b()
 n=b
 s=3
-return A.A(o.YC(b,a,A.QN(A.aJJ()),null,t.z),$async$lU)
+return A.A(o.YC(b,a,A.QN(null,A.aJJ()),null,t.z),$async$lU)
 case 3:q=p.rR(0,n,d)
 s=1
 break
@@ -92321,7 +92324,7 @@ while(true)switch(s){case 0:o=p.a
 o===$&&A.b()
 n=a
 s=3
-return A.A(o.arz(a,b,A.QN(A.aJJ()),t.z),$async$pi)
+return A.A(o.arz(a,b,A.QN(null,A.aJJ()),t.z),$async$pi)
 case 3:q=p.rR(0,n,d)
 s=1
 break
@@ -92334,7 +92337,7 @@ while(true)switch(s){case 0:o=p.a
 o===$&&A.b()
 n=b
 s=3
-return A.A(o.ast(0,b,null,null,A.aIE("DELETE",A.QN(A.aJJ())),null,t.z),$async$on)
+return A.A(o.ast(0,b,null,null,A.aIE("DELETE",A.QN(null,A.aJJ())),null,t.z),$async$on)
 case 3:q=p.rR(0,n,d)
 s=1
 break
@@ -92475,7 +92478,7 @@ s=q}while(true)switch(s){case 0:j=A.aNs(null)
 q=3
 m=t.z
 s=6
-return A.A(J.aXp(j,"https://sorty.margintopsolutions.com/api/user",A.QN(A.a7(["Authorization","Bearer "+a],t.N,m)),m),$async$CT)
+return A.A(J.aXp(j,"https://sorty.margintopsolutions.com/api/user",A.QN("application/json",A.a7(["Authorization","Bearer "+a],t.N,m)),m),$async$CT)
 case 6:o=c
 if(o.c===200){l=$.q4()
 l=$.a9.a9$.x.i(0,l)
